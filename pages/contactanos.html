@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>active-elchalten</title>
+        <!--favicon icono en navegador-->
+        <link rel="shortcut icon" href="../favicon.ico"type="image/x-icon">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header>               
+            <div class="encabezado"> 
+                <a href="../index.html">
+                <img class="contenedorLogo" src="../assets/img/logo.jfif" alt="logo gimnasio active">
+                </a> 
+                
+                <nav class="navbar navbar-light deco">
+                   
+                    <div class="container-fluid deco">
+                      <li><a class="navbar-brand"  href="../index.html">Inicio</a></li>
+                      <li><a class="navbar-brand" href="./clases.html">Clases</a></li>
+                      <li><a class="navbar-brand" href="./galeria.html">Galeria</a></li>
+                      <li><a class="navbar-brand" href="./nosotros.html">Nosotros</a></li>   
+                      <li><a class="navbar-brand" href="#">Contactanos</a></li>
+                    </div>
+                </nav>            
+            </div>         
+        </header>
+        
+        <main>
+            <section class="contacto">
+            <div class="contactoCuerpo">
+                    <p class=" bordeTitulo">Dejanos tu consulta</p>
+                <div>
+                    <!--formulario basico-->
+                    <form action="">
+                <div>
+                    <!--etiqueta label indica lo que espero que escriba el usuario
+                    <label for="nombre">Nommbe</label>-->
+                    <input type="text" placeholder="Nombre"required>
+                    <!--etiqueta input es en la que va a escribir el usuario-->
+                </div>
+                <div>
+                    <!--<label for="apellido">Apellido</label> -->
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <div>
+                    <!--<label for="email">E-mail</label>-->
+                    <input type="email"placeholder="Dejanos tu e-mail" required>
+                </div>
+                <div>
+                    <textarea name="" id="" cols="30" rows="10"placeholder="Deja tu consulta"required></textarea>
+                </div>
+                <div>
+                    <input type="reset" value="Limpiar ">
+                    <input type="submit" value="Enviar">
+                </div>
+                    </form>
+                </div>
+            </div>
+            <!--</section>
+             para insertar mapa etiqueta iframe copiar html desde el sitio
+            <section>-->
+            <div class="contactoCuerpo">
+                <p class=" bordeTitulo">Donde encontrarnos</p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4372.6406708689365!2d-72.88700613950174!3d-49.333451690432625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdbd03e22a838349%3A0xa72a54f883b5afca!2sPerito%20Moreno%201%2C%20El%20Chalten%2C%20Santa%20Cruz!5e0!3m2!1ses!2sar!4v1676824892576!5m2!1ses!2sar" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            </div>     
+            </section>               
+
+        </main>
+        <footer class="colorNav text-white piePagina">
+            <div class="row">
+              <div class="col-4 alinear">
+                <a href="https://www.instagram.com/active.elchalten/"target="_blank"><i class="ri-instagram-line icon"></i></a>
+                
+              </div>
+              <div class="col-4 alinear">
+                <a href=""><i class="ri-facebook-circle-line icon"></i></a>
+                
+              </div>
+              <div class="col-4 alinear">
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="ri-whatsapp-line icon"></i></a>
+                
+              </div>
+            </div>
+          </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap');
+@keyframes float {
+    0%{
+        transform: translateY(0); /*The starting point of the animation is 0.*/
+    }
+    50%{
+        transform: translateY(-1rem); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }
+    100%{
+        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+}
+/*para animaciones*/
+
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body{
+    width:100%;   
+    height:100vh;   
+    font-family:'Roboto', sans-serif;
+    background: linear-gradient(to right, #008b6f3b, #31ad9462, #aad1c967,#dff5f057 ),url("../assets/img/miachalten.jpg");
+    background-size:cover;
+    background-position:center; 
+   
+}
+.contenedorLogo{
+   width:100px;
+   object-fit: contain;
+   border-radius: 3px;
+}  
+.encabezado{
+    background-color: #008b6f88;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    justify-content:space-between;
+    align-items:center;
+    
+
+  
+}
+.deco{
+    text-decoration: none;
+    list-style:none;
+    font-weight:bold black;  
+      
+}
+.cuerpoIndex {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;       
+}
+.subtiIndex{
+    text-align: center;       
+}
+.testimonios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.boxIndex{
+    background-color: #008B6F;
+    display:flex;
+    flex-wrap: wrap;
+    width:300px;
+    height:300px;
+    border:solid black;
+    border-radius: 10px;
+    margin: 50px 50px 50px 50px;
+    padding:10px;
+    justify-content:center;
+    align-items: center;
+    align-content: space-evenly;
+    box-shadow: -25px -19px 48px 0px rgba(0,0,0,0.43);
+-webkit-caja-sombra: -25px -19px 48px 0px rgba(0,0,0,0.43);
+-moz-box-shadow: -25px -19px 48px 0px rgba(0,0,0,0.43);    
+}
+.boxIndex:hover{
+    background-color: rgba(240, 248, 255, 0.644);
+        width: 30%;
+        opacity: 1;
+        filter: contrast(100%);
+}
+.img{ 
+    width: fit-content;
+    object-fit: cover;
+    border: radius 2px;
+}
+
+.subIndex{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.cuerpoClases{
+    display: flex ;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-content: space-evenly;
+    align-items: center;
+}
+.clases{
+    width:55%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+.galeria{ 
+    width: 90%;
+    margin:0 auto;
+    height: 85vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0.5px solid gray
+
+    }
+.imagenGal{
+    width: 0px;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: .5s ease;
+
+}
+.imagenGal:hover{
+    width: 30%;
+    opacity: 1;
+    filter: contrast(120%);}
+ 
+.tituloGaleria{
+    text-align: center;
+    margin-top: 0 auto;
+    color: black;    
+
+}
+.bordeTitulo{
+    text-align: center;
+    border:hidden rgba(0, 0, 0, 0.479);
+    background-color: rgba(250, 235, 215, 0.397);
+    border-radius: 3px;
+    box-shadow: -25px -19px 48px 0px rgba(0,0,0,0.43);
+-webkit-caja-sombra: -25px -19px 48px 0px rgba(0,0,0,0.43);
+-moz-box-shadow: -25px -19px 48px 0px rgba(0,0,0,0.43);
+}
+.video{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+
+   
+}
+.boxNosotros{ 
+    flex-wrap: wrap;
+    background-color: #008B6F;
+    width:300px;
+    height:300px;
+    border:solid black ;
+    border-radius: 10px;
+    display:inline-flex;
+    margin:50px 50px 50px 50px ;
+    padding: 10px;
+    text-align:justify;
+    box-shadow: -25px -19px 48px 0px rgba(0,0,0,0.43);
+    -webkit-caja-sombra: -25px -19px 48px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: -25px -19px 48px 0px rgba(0,0,0,0.43);  
+}
+.boxNosotros:hover{
+    background-color: rgba(240, 248, 255, 0.644);
+    width: 30%;
+    opacity: 1;
+    filter: contrast(100%);
+}
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+    
+}
+.contactoCuerpo{
+    font-weight: bold;
+    text-align:justify;
+    margin-top: 10px;
+  }
+  .piePagina{
+    background-color: rgba(128, 128, 128, 0.432);
+    bottom:0;
+    left:0;
+    height:4rem;
+    width:100%;
+}
+.alinear{
+   text-align: center;
+}
+.icon{
+    display: inline-block;
+    font-size: 2rem;
+    color: #fff;
+    animation: float infinite 4s ease-in-out ;
+}
+.ri-facebook-circle-line{
+   animation-delay: 0.5s; /*Adds a animation delay of 1 seconds.*/
+}
+
+.ri-whatsapp-line{
+  animation-delay: 1s; /*Adds a animation delay of 2 seconds.*/
+}
+
+/*
+.footer{
+    background-color: rgba(128, 128, 128, 0.432);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: auto;    
+    position:relative;  
+    bottom:0 auto;      
+    }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+body{background-color: #B1B5B8;
+    font-family:'Roboto', sans-serif;}
+header{padding: 10px;
+   }
+.colorFondoHeader{background-color: #008B6F}
+.contenedorLogo{width: 100px;}
+.listaNavegacion{list-style: none;
+              
+    } esto es .deco
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+
+  .ulMenuIndex{list-style:none;
+                display: flex;
+                justify-content: center;
+                padding: top -30px;
+                } 
+
+.linkNav{text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin:5px;
+    float: left;
+    
+    }
+    .centradoTextoSeccion{text-align: center;}
+    .imagenIndex{
+        width: 25%;
+        height: 50%;
+        margin-left: 500px;
+    }
+    .parrafoImportanteIndex{
+        font-size: large;
+        font-weight: bold;
+    }
+
+    footer{background-color:#FAB900;
+    text-align: center;}
+
+ 
+esto es provisorio como guia de la clase
+padding-top: 15px;
+    
+} ejemplo profe
+.linkNav{text-decoration: none ; 
+         color: black;
+         font-size: 20px;
+         float: right;
+         margin-right: 30px;
+         padding-top: 
+         body{background-color: rgb(207, 207, 207);}
+header
+.contenedorLogo{width: 100px;}
+.colorFondoHeader{background-color: #008B6F
+}
+.listaNavegacion{ list-style: none;
+    text-decoration: none;
+    padding-top: 15px;
+    
+}
+.linkNav{ text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 30px;
+    padding-top: 30px;
+        }
+main
+
+.colorTituloPrincipal{color: black;
+                    margin-right: 30px;}
+.colorSubtituloInicio{color: #008B6F;}
+
+
+footer{background-color:#FAB900;}*/
